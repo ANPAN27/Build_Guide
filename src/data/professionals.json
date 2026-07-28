@@ -1,0 +1,226 @@
+[
+  {
+    "id": "1",
+    "name": "Rajesh Kumar",
+    "specialty": "Architects",
+    "city": "Mumbai",
+    "experience": 15,
+    "rating": 4.8,
+    "reviewCount": 127,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/rajesh-kumar.jpg",
+    "gallery": [
+      "/images/projects/modern-house-1.jpg",
+      "/images/projects/villa-2.jpg",
+      "/images/projects/apartment-3.jpg"
+    ],
+    "description": "Award-winning architect specializing in modern residential projects across Mumbai. With over 15 years of experience, Rajesh has designed more than 200 homes that blend functionality with aesthetic appeal.",
+    "contact": {
+      "phone": "+91 98765 43210",
+      "whatsapp": "+91 98765 43210",
+      "email": "rajesh.kumar@buildguide.in"
+    },
+    "location": {
+      "lat": 19.076,
+      "lng": 72.8777,
+      "address": "123 Marine Drive, Mumbai, Maharashtra 400001"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Priya Sharma",
+    "specialty": "Interior Designers",
+    "city": "Delhi",
+    "experience": 12,
+    "rating": 4.9,
+    "reviewCount": 98,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/priya-sharma.jpg",
+    "gallery": [
+      "/images/projects/living-room-1.jpg",
+      "/images/projects/bedroom-2.jpg",
+      "/images/projects/kitchen-3.jpg"
+    ],
+    "description": "Creative interior designer known for transforming ordinary spaces into extraordinary homes. Priya specializes in contemporary Indian design with a focus on sustainable materials.",
+    "contact": {
+      "phone": "+91 98765 43211",
+      "whatsapp": "+91 98765 43211",
+      "email": "priya.sharma@buildguide.in"
+    },
+    "location": {
+      "lat": 28.6139,
+      "lng": 77.209,
+      "address": "45 Connaught Place, New Delhi 110001"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Amit Patel",
+    "specialty": "Contractors",
+    "city": "Ahmedabad",
+    "experience": 20,
+    "rating": 4.7,
+    "reviewCount": 156,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/amit-patel.jpg",
+    "gallery": [
+      "/images/projects/construction-1.jpg",
+      "/images/projects/renovation-2.jpg",
+      "/images/projects/extensions-3.jpg"
+    ],
+    "description": "Experienced general contractor with expertise in residential construction and renovation. Amit's team delivers quality workmanship on time and within budget.",
+    "contact": {
+      "phone": "+91 98765 43212",
+      "whatsapp": "+91 98765 43212",
+      "email": "amit.patel@buildguide.in"
+    },
+    "location": {
+      "lat": 23.0225,
+      "lng": 72.5714,
+      "address": "78 SG Highway, Ahmedabad, Gujarat 380015"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Sunita Reddy",
+    "specialty": "Painters",
+    "city": "Bangalore",
+    "experience": 10,
+    "rating": 4.6,
+    "reviewCount": 89,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/sunita-reddy.jpg",
+    "gallery": [
+      "/images/projects/paint-1.jpg",
+      "/images/projects/exterior-2.jpg",
+      "/images/projects/texture-3.jpg"
+    ],
+    "description": "Professional painting service specializing in interior and exterior painting. Sunita uses premium eco-friendly paints and offers complete surface preparation.",
+    "contact": {
+      "phone": "+91 98765 43213",
+      "whatsapp": "+91 98765 43213",
+      "email": "sunita.reddy@buildguide.in"
+    },
+    "location": {
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "address": "12 Koramangala, Bangalore, Karnataka 560034"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Vikram Singh",
+    "specialty": "Civil Engineers",
+    "city": "Jaipur",
+    "experience": 18,
+    "rating": 4.8,
+    "reviewCount": 112,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/vikram-singh.jpg",
+    "gallery": [
+      "/images/projects/structural-1.jpg",
+      "/images/projects/blueprint-2.jpg",
+      "/images/projects/site-3.jpg"
+    ],
+    "description": "Licensed civil engineer with expertise in residential construction and structural analysis. Vikram ensures every project meets the highest safety standards.",
+    "contact": {
+      "phone": "+91 98765 43214",
+      "whatsapp": "+91 98765 43214",
+      "email": "vikram.singh@buildguide.in"
+    },
+    "location": {
+      "lat": 26.9124,
+      "lng": 75.7873,
+      "address": "34 MI Road, Jaipur, Rajasthan 302001"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Ananya Iyer",
+    "specialty": "Interior Designers",
+    "city": "Chennai",
+    "experience": 8,
+    "rating": 4.5,
+    "reviewCount": 67,
+    "verified": false,
+    "type": "commercial",
+    "photo": "/images/professionals/ananya-iyer.jpg",
+    "gallery": [
+      "/images/projects/office-1.jpg",
+      "/images/projects/restaurant-2.jpg",
+      "/images/projects/retail-3.jpg"
+    ],
+    "description": "Talented interior designer specializing in commercial spaces. Ananya creates functional and visually appealing environments for offices, restaurants, and retail stores.",
+    "contact": {
+      "phone": "+91 98765 43215",
+      "whatsapp": "+91 98765 43215",
+      "email": "ananya.iyer@buildguide.in"
+    },
+    "location": {
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "address": "56 T Nagar, Chennai, Tamil Nadu 600017"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Rahul Verma",
+    "specialty": "Electricians",
+    "city": "Pune",
+    "experience": 14,
+    "rating": 4.7,
+    "reviewCount": 93,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/rahul-verma.jpg",
+    "gallery": [
+      "/images/projects/wiring-1.jpg",
+      "/images/projects/smart-home-2.jpg",
+      "/images/projects/panel-3.jpg"
+    ],
+    "description": "Licensed electrician specializing in residential wiring, smart home installations, and electrical panel upgrades. Rahul provides 24/7 emergency services.",
+    "contact": {
+      "phone": "+91 98765 43216",
+      "whatsapp": "+91 98765 43216",
+      "email": "rahul.verma@buildguide.in"
+    },
+    "location": {
+      "lat": 18.5204,
+      "lng": 73.8567,
+      "address": "89 FC Road, Pune, Maharashtra 411004"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Meera Nair",
+    "specialty": "Landscapers",
+    "city": "Kochi",
+    "experience": 11,
+    "rating": 4.9,
+    "reviewCount": 78,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/meera-nair.jpg",
+    "gallery": [
+      "/images/projects/garden-1.jpg",
+      "/images/projects/terrace-2.jpg",
+      "/images/projects/landscape-3.jpg"
+    ],
+    "description": "Creative landscaper specializing in tropical gardens and sustainable outdoor spaces. Meera transforms ordinary yards into beautiful, low-maintenance gardens.",
+    "contact": {
+      "phone": "+91 98765 43217",
+      "whatsapp": "+91 98765 43217",
+      "email": "meera.nair@buildguide.in"
+    },
+    "location": {
+      "lat": 9.9312,
+      "lng": 76.2673,
+      "address": "23 Marine Drive, Kochi, Kerala 682031"
+    }
+  }
+]
