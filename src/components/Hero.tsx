@@ -122,24 +122,6 @@ export default function Hero() {
               </div>
             </form>
 
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-              <div className="bg-white/10 rounded-xl p-4">
-                <div className="text-2xl font-bold">500+</div>
-                <div className="text-blue-100 text-sm">Verified Professionals</div>
-              </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <div className="text-2xl font-bold">50+</div>
-                <div className="text-blue-100 text-sm">Cities Covered</div>
-              </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <div className="text-2xl font-bold">10,000+</div>
-                <div className="text-blue-100 text-sm">Happy Customers</div>
-              </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <div className="text-2xl font-bold">4.8</div>
-                <div className="text-blue-100 text-sm">Average Rating</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

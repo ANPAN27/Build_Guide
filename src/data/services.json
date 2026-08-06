@@ -2,56 +2,56 @@
   {
     "id": "architect",
     "name": "Architects",
-    "icon": "🏛️",
+    "icon": "/icons/architect.webp",
     "description": "Professional architects for residential and commercial projects",
     "slug": "architects"
   },
   {
     "id": "interior-designer",
     "name": "Interior Designers",
-    "icon": "🎨",
+    "icon": "/icons/interior-designer.webp",
     "description": "Transform your space with expert interior design",
     "slug": "interior-designers"
   },
   {
     "id": "painter",
     "name": "Painters",
-    "icon": "🖌️",
+    "icon": "/icons/painter.webp",
     "description": "Professional painting services for homes and offices",
     "slug": "painters"
   },
   {
     "id": "contractor",
     "name": "Contractors",
-    "icon": "🔨",
+    "icon": "/icons/contractor.webp",
     "description": "General contractors for construction and renovation",
     "slug": "contractors"
   },
   {
     "id": "civil-engineer",
     "name": "Civil Engineers",
-    "icon": "📐",
+    "icon": "/icons/civil-engineer.webp",
     "description": "Structural engineering and construction consulting",
     "slug": "civil-engineers"
   },
   {
     "id": "electrician",
     "name": "Electricians",
-    "icon": "⚡",
+    "icon": "/icons/electrician.webp",
     "description": "Licensed electricians for wiring and electrical work",
     "slug": "electricians"
   },
   {
     "id": "plumber",
     "name": "Plumbers",
-    "icon": "🔧",
+    "icon": "/icons/plumber.webp",
     "description": "Expert plumbing services for residential and commercial",
     "slug": "plumbers"
   },
   {
     "id": "landscaper",
     "name": "Landscapers",
-    "icon": "🌿",
+    "icon": "/icons/landscaper.webp",
     "description": "Garden design and landscape architecture",
     "slug": "landscapers"
   }

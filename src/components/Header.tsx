@@ -12,7 +12,6 @@ export default function Header() {
     { href: "/cost-calculator", label: "Cost Calculator" },
     { href: "/guide", label: "Home Owner Guide" },
     { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
   ];
 
   return (
