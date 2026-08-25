@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 interface ServiceCardProps {
   id: string;
@@ -64,23 +63,12 @@ export default function ServiceCard({
       href={`/search?service=${slug}`}
       className="card group flex flex-col items-center text-center hover:border-primary/30"
     >
-<<<<<<< HEAD
-      <div className="w-16 h-16 mb-4 flex items-center justify-center">
-        <Image
-          src={icon}
-          alt={`${name} icon`}
-          className="w-14 h-14 object-contain"
-          width={56}
-          height={56}
-        />
-=======
       <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
         {iconMap[id] || (
           <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
         )}
->>>>>>> a1da4b0 (updated website)
       </div>
       <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
         {name}

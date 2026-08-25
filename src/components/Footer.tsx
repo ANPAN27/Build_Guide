@@ -25,12 +25,6 @@ export default function Footer() {
           <div>
             <h3 className="text-base font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-<<<<<<< HEAD
-              <li><Link href="/search" className="text-blue-100 hover:text-white transition-colors text-base">Find Professionals</Link></li>
-              <li><Link href="/cost-calculator" className="text-blue-100 hover:text-white transition-colors text-base">Cost Calculator</Link></li>
-              <li><Link href="/guide" className="text-blue-100 hover:text-white transition-colors text-base">Home Owner Guide</Link></li>
-              <li><Link href="/about" className="text-blue-100 hover:text-white transition-colors text-base">About Us</Link></li>
-=======
               <li><Link href="/search" className="text-blue-100 hover:text-white transition-colors text-base inline-flex items-center gap-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 Find Professionals
@@ -47,7 +41,6 @@ export default function Footer() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 About Us
               </Link></li>
->>>>>>> a1da4b0 (updated website)
             </ul>
           </div>
 
@@ -76,8 +69,6 @@ export default function Footer() {
               </Link></li>
             </ul>
           </div>
-<<<<<<< HEAD
-=======
 
           <div>
             <h3 className="text-base font-semibold mb-4">Contact Us</h3>
@@ -103,22 +94,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
->>>>>>> a1da4b0 (updated website)
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-blue-100 text-base">
           <p>&copy; {currentYear} Build Guide. All rights reserved.</p>
-          <p className="mt-2 text-sm text-blue-100/80">
-            Icons by{" "}
-            <a
-              href="https://iconscout.com"
-              target="_blank"
-              rel="noreferrer"
-              className="underline hover:text-white"
-            >
-              IconScout
-            </a>
-          </p>
         </div>
       </div>
     </footer>

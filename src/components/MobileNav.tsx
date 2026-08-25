@@ -68,8 +68,6 @@ export default function MobileNav() {
         </svg>
       ),
     },
-<<<<<<< HEAD
-=======
     {
       href: "/about",
       label: "About",
@@ -79,7 +77,6 @@ export default function MobileNav() {
         </svg>
       ),
     },
->>>>>>> a1da4b0 (updated website)
   ];
 
   const navItems = [...baseItems, authItem, ...tailItems];

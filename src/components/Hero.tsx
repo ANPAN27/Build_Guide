@@ -129,8 +129,6 @@ export default function Hero() {
               </div>
             </form>
 
-<<<<<<< HEAD
-=======
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                 <div className="text-2xl font-bold">500+</div>
@@ -149,7 +147,6 @@ export default function Hero() {
                 <div className="text-blue-100 text-sm">Average Rating</div>
               </div>
             </div>
->>>>>>> a1da4b0 (updated website)
           </div>
         </div>
       </section>

@@ -1,24 +1,6 @@
 @import "tailwindcss";
 
 :root {
-<<<<<<< HEAD
-  --primary: #0ea5e9;
-  --primary-light: #38bdf8;
-  --primary-dark: #0284c7;
-  --secondary: #28a745;
-  --secondary-light: #34ce57;
-  --secondary-dark: #1e7e34;
-  --background: #ffffff;
-  --surface: #f8f9fa;
-  --surface-dark: #e9ecef;
-  --border: #dee2e6;
-  --text-primary: #1a1a2e;
-  --text-secondary: #6c757d;
-  --text-muted: #adb5bd;
-  --success: #28a745;
-  --warning: #ffc107;
-  --danger: #dc3545;
-=======
   --primary: #2563eb;
   --primary-light: #3b82f6;
   --primary-dark: #1d4ed8;
@@ -35,27 +17,12 @@
   --success: #0ea5e9;
   --warning: #fbbf24;
   --danger: #ef4444;
->>>>>>> a1da4b0 (updated website)
   --verified: #2563eb;
   --star: #f59e0b;
   --whatsapp: #25d366;
 }
 
 @theme inline {
-<<<<<<< HEAD
-  --color-primary: #0ea5e9;
-  --color-primary-light: #38bdf8;
-  --color-primary-dark: #0284c7;
-  --color-secondary: #28a745;
-  --color-secondary-light: #34ce57;
-  --color-secondary-dark: #1e7e34;
-  --color-surface: #f8f9fa;
-  --color-surface-dark: #e9ecef;
-  --color-border: #dee2e6;
-  --color-text-primary: #1a1a2e;
-  --color-text-secondary: #6c757d;
-  --color-text-muted: #adb5bd;
-=======
   --color-primary: #2563eb;
   --color-primary-light: #3b82f6;
   --color-primary-dark: #1d4ed8;
@@ -68,7 +35,6 @@
   --color-text-primary: #0c4a6e;
   --color-text-secondary: #475569;
   --color-text-muted: #94a3b8;
->>>>>>> a1da4b0 (updated website)
   --color-verified: #2563eb;
   --color-star: #f59e0b;
   --color-whatsapp: #25d366;
@@ -294,4 +260,8 @@ h3 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; }
 }
 @keyframes fadeIn {
   to { opacity: 1; transform: translateY(0); }
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
