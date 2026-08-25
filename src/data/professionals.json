@@ -16,6 +16,11 @@
       "/images/projects/apartment-3.jpg"
     ],
     "description": "Award-winning architect specializing in modern residential projects across Mumbai. With over 15 years of experience, Rajesh has designed more than 200 homes that blend functionality with aesthetic appeal.",
+    "workExperience": [
+      { "role": "Principal Architect", "company": "Kumar Design Studio", "duration": "2018 - Present", "projects": 85 },
+      { "role": "Senior Architect", "company": "Oberoi Realty", "duration": "2014 - 2018", "projects": 60 },
+      { "role": "Architect", "company": "Hafeez Contractor", "duration": "2009 - 2014", "projects": 55 }
+    ],
     "contact": {
       "phone": "+91 98765 43210",
       "whatsapp": "+91 98765 43210",
@@ -44,6 +49,11 @@
       "/images/projects/kitchen-3.jpg"
     ],
     "description": "Creative interior designer known for transforming ordinary spaces into extraordinary homes. Priya specializes in contemporary Indian design with a focus on sustainable materials.",
+    "workExperience": [
+      { "role": "Lead Interior Designer", "company": "Livspace", "duration": "2019 - Present", "projects": 120 },
+      { "role": "Interior Designer", "company": "HomeLane", "duration": "2015 - 2019", "projects": 80 },
+      { "role": "Junior Designer", "company": "Design Consortium", "duration": "2012 - 2015", "projects": 35 }
+    ],
     "contact": {
       "phone": "+91 98765 43211",
       "whatsapp": "+91 98765 43211",
@@ -72,6 +82,10 @@
       "/images/projects/extensions-3.jpg"
     ],
     "description": "Experienced general contractor with expertise in residential construction and renovation. Amit's team delivers quality workmanship on time and within budget.",
+    "workExperience": [
+      { "role": "Founder & Managing Director", "company": "Patel Constructions", "duration": "2010 - Present", "projects": 200 },
+      { "role": "Site Engineer", "company": "L&T Construction", "duration": "2005 - 2010", "projects": 40 }
+    ],
     "contact": {
       "phone": "+91 98765 43212",
       "whatsapp": "+91 98765 43212",
@@ -100,6 +114,10 @@
       "/images/projects/texture-3.jpg"
     ],
     "description": "Professional painting service specializing in interior and exterior painting. Sunita uses premium eco-friendly paints and offers complete surface preparation.",
+    "workExperience": [
+      { "role": "Owner & Lead Painter", "company": "Reddy Paint Solutions", "duration": "2016 - Present", "projects": 350 },
+      { "role": "Painting Supervisor", "company": "Asian Paints Royale", "duration": "2013 - 2016", "projects": 150 }
+    ],
     "contact": {
       "phone": "+91 98765 43213",
       "whatsapp": "+91 98765 43213",
@@ -128,6 +146,11 @@
       "/images/projects/site-3.jpg"
     ],
     "description": "Licensed civil engineer with expertise in residential construction and structural analysis. Vikram ensures every project meets the highest safety standards.",
+    "workExperience": [
+      { "role": "Chief Structural Engineer", "company": "Singh & Associates", "duration": "2012 - Present", "projects": 95 },
+      { "role": "Structural Engineer", "company": "NBCC India", "duration": "2007 - 2012", "projects": 45 },
+      { "role": "Junior Engineer", "company": "PWD Rajasthan", "duration": "2005 - 2007", "projects": 20 }
+    ],
     "contact": {
       "phone": "+91 98765 43214",
       "whatsapp": "+91 98765 43214",
@@ -156,6 +179,10 @@
       "/images/projects/retail-3.jpg"
     ],
     "description": "Talented interior designer specializing in commercial spaces. Ananya creates functional and visually appealing environments for offices, restaurants, and retail stores.",
+    "workExperience": [
+      { "role": "Senior Interior Designer", "company": "SpaceCraft Architects", "duration": "2020 - Present", "projects": 45 },
+      { "role": "Interior Designer", "company": "Godrej Interio", "duration": "2017 - 2020", "projects": 30 }
+    ],
     "contact": {
       "phone": "+91 98765 43215",
       "whatsapp": "+91 98765 43215",
@@ -184,6 +211,10 @@
       "/images/projects/panel-3.jpg"
     ],
     "description": "Licensed electrician specializing in residential wiring, smart home installations, and electrical panel upgrades. Rahul provides 24/7 emergency services.",
+    "workExperience": [
+      { "role": "Master Electrician", "company": "Verma Electricals", "duration": "2015 - Present", "projects": 500 },
+      { "role": "Electrical Supervisor", "company": "Tata Projects", "duration": "2011 - 2015", "projects": 80 }
+    ],
     "contact": {
       "phone": "+91 98765 43216",
       "whatsapp": "+91 98765 43216",
@@ -212,6 +243,10 @@
       "/images/projects/landscape-3.jpg"
     ],
     "description": "Creative landscaper specializing in tropical gardens and sustainable outdoor spaces. Meera transforms ordinary yards into beautiful, low-maintenance gardens.",
+    "workExperience": [
+      { "role": "Founder & Landscape Architect", "company": "GreenScape Studio", "duration": "2017 - Present", "projects": 110 },
+      { "role": "Landscape Designer", "company": "ITC Gardenia", "duration": "2014 - 2017", "projects": 40 }
+    ],
     "contact": {
       "phone": "+91 98765 43217",
       "whatsapp": "+91 98765 43217",
@@ -221,6 +256,134 @@
       "lat": 9.9312,
       "lng": 76.2673,
       "address": "23 Marine Drive, Kochi, Kerala 682031"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Deepak Joshi",
+    "specialty": "Architects",
+    "city": "Nagpur",
+    "experience": 13,
+    "rating": 4.6,
+    "reviewCount": 74,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/deepak-joshi.jpg",
+    "gallery": [
+      "/images/projects/modern-house-4.jpg",
+      "/images/projects/villa-5.jpg",
+      "/images/projects/farmhouse-6.jpg"
+    ],
+    "description": "Nagpur-based architect known for eco-friendly residential designs. Deepak integrates Vastu principles with modern architecture to create harmonious living spaces.",
+    "workExperience": [
+      { "role": "Principal Architect", "company": "Joshi Architects", "duration": "2016 - Present", "projects": 65 },
+      { "role": "Assistant Architect", "company": "CP Kukreja Architects", "duration": "2012 - 2016", "projects": 30 }
+    ],
+    "contact": {
+      "phone": "+91 98765 43218",
+      "whatsapp": "+91 98765 43218",
+      "email": "deepak.joshi@buildguide.in"
+    },
+    "location": {
+      "lat": 21.1458,
+      "lng": 79.0882,
+      "address": "42 Dharampeth, Nagpur, Maharashtra 440010"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Kavita Deshmukh",
+    "specialty": "Interior Designers",
+    "city": "Nagpur",
+    "experience": 9,
+    "rating": 4.7,
+    "reviewCount": 52,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/kavita-deshmukh.jpg",
+    "gallery": [
+      "/images/projects/living-room-4.jpg",
+      "/images/projects/bedroom-5.jpg",
+      "/images/projects/kitchen-6.jpg"
+    ],
+    "description": "Nagpur's rising star in interior design. Kavita combines traditional Maharashtrian aesthetics with modern minimalism to create warm, inviting homes.",
+    "workExperience": [
+      { "role": "Lead Interior Designer", "company": "Deshmukh Interiors", "duration": "2019 - Present", "projects": 75 },
+      { "role": "Interior Stylist", "company": "Pepperfry Studio", "duration": "2016 - 2019", "projects": 40 }
+    ],
+    "contact": {
+      "phone": "+91 98765 43219",
+      "whatsapp": "+91 98765 43219",
+      "email": "kavita.deshmukh@buildguide.in"
+    },
+    "location": {
+      "lat": 21.1458,
+      "lng": 79.0882,
+      "address": "88 Sadar, Nagpur, Maharashtra 440001"
+    }
+  },
+  {
+    "id": "11",
+    "name": "Suresh Babu",
+    "specialty": "Contractors",
+    "city": "Hyderabad",
+    "experience": 22,
+    "rating": 4.8,
+    "reviewCount": 189,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/suresh-babu.jpg",
+    "gallery": [
+      "/images/projects/villa-hyd-1.jpg",
+      "/images/projects/apartment-hyd-2.jpg",
+      "/images/projects/gate-hyd-3.jpg"
+    ],
+    "description": "One of Hyderabad's most trusted contractors with over two decades of experience. Suresh specializes in villa construction and premium residential projects.",
+    "workExperience": [
+      { "role": "Director", "company": "Babu Constructions Pvt Ltd", "duration": "2012 - Present", "projects": 180 },
+      { "role": "Project Manager", "company": "My Home Constructions", "duration": "2005 - 2012", "projects": 50 }
+    ],
+    "contact": {
+      "phone": "+91 98765 43220",
+      "whatsapp": "+91 98765 43220",
+      "email": "suresh.babu@buildguide.in"
+    },
+    "location": {
+      "lat": 17.385,
+      "lng": 78.4867,
+      "address": "15 Jubilee Hills, Hyderabad, Telangana 500033"
+    }
+  },
+  {
+    "id": "12",
+    "name": "Neha Gupta",
+    "specialty": "Painters",
+    "city": "Nagpur",
+    "experience": 7,
+    "rating": 4.5,
+    "reviewCount": 41,
+    "verified": true,
+    "type": "residential",
+    "photo": "/images/professionals/neha-gupta.jpg",
+    "gallery": [
+      "/images/projects/paint-nagpur-1.jpg",
+      "/images/projects/exterior-nagpur-2.jpg",
+      "/images/projects/texture-nagpur-3.jpg"
+    ],
+    "description": "Young and innovative painting professional in Nagpur. Neha is known for her texture work and specialty wall finishes using eco-friendly paints.",
+    "workExperience": [
+      { "role": "Founder", "company": "Neha Paint Works", "duration": "2020 - Present", "projects": 200 },
+      { "role": "Painting Artist", "company": "Berger Paints", "duration": "2018 - 2020", "projects": 80 }
+    ],
+    "contact": {
+      "phone": "+91 98765 43221",
+      "whatsapp": "+91 98765 43221",
+      "email": "neha.gupta@buildguide.in"
+    },
+    "location": {
+      "lat": 21.1458,
+      "lng": 79.0882,
+      "address": "27 Civil Lines, Nagpur, Maharashtra 440001"
     }
   }
 ]

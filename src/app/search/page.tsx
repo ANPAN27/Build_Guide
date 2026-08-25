@@ -17,7 +17,11 @@ interface Professional {
   description: string;
 }
 
-const cities = ["Mumbai","Delhi","Bangalore","Chennai","Kolkata","Hyderabad","Pune","Ahmedabad","Jaipur","Nagpur","Lucknow","Kochi"];
+const cities = [
+  "Mumbai","Delhi","Bangalore","Chennai","Kolkata","Hyderabad","Pune",
+  "Ahmedabad","Jaipur","Nagpur","Lucknow","Kochi","Indore","Bhopal",
+  "Surat","Nashik","Visakhapatnam","Patna","Ranchi","Chandigarh",
+];
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -159,7 +163,11 @@ function SearchResults() {
         <div className="flex-1">
           {results.length === 0 ? (
             <div className="text-center py-16">
-              <div className="text-5xl mb-4">🔍</div>
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
               <h3 className="text-xl font-semibold mb-2">No professionals found</h3>
               <p className="text-text-secondary mb-6">Try adjusting your filters or search in a different city.</p>
               <button onClick={clearFilters} className="btn btn-primary">
@@ -198,9 +206,18 @@ function SearchResults() {
                   </div>
 
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-text-secondary mb-4">
-                    <span>📍 {pro.city}</span>
-                    <span>🕐 {pro.experience} years</span>
-                    <span className="capitalize">🏠 {pro.type}</span>
+                    <span className="inline-flex items-center gap-1">
+                      <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                      {pro.city}
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      {pro.experience} years
+                    </span>
+                    <span className="capitalize inline-flex items-center gap-1">
+                      <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                      {pro.type}
+                    </span>
                   </div>
 
                   <p className="text-sm text-text-secondary mb-4 line-clamp-2">{pro.description}</p>
@@ -226,7 +243,11 @@ export default function SearchPage() {
       <div className="container">
         <Suspense fallback={
           <div className="text-center py-16">
-            <div className="text-4xl mb-4">🔍</div>
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-primary animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </div>
             <p className="text-text-secondary">Loading search...</p>
           </div>
         }>
