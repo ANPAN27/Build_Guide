@@ -15,9 +15,14 @@ interface Professional {
   verified: boolean;
   type: string;
   description: string;
+  councilRegistration?: string;
+  firmName?: string;
+  subSpecialization?: string;
 }
 
-const cities = ["Mumbai","Delhi","Bangalore","Chennai","Kolkata","Hyderabad","Pune","Ahmedabad","Jaipur","Nagpur","Lucknow","Kochi"];
+const cities = [...new Set((professionals as Professional[]).map((p) => p.city))].sort();
+
+const subSpecs = [...new Set((professionals as Professional[]).map((p) => p.subSpecialization).filter(Boolean))].sort() as string[];
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -31,6 +36,7 @@ function SearchResults() {
     experience: "",
     verified: false,
     type: "",
+    subSpecialization: "",
   });
 
   const results = useMemo(() => {
@@ -39,6 +45,7 @@ function SearchResults() {
       if (filters.service && p.specialty.toLowerCase().replace(/ /g, "-") !== filters.service.toLowerCase().replace(/ /g, "-")) return false;
       if (filters.verified && !p.verified) return false;
       if (filters.type && p.type !== filters.type) return false;
+      if (filters.subSpecialization && p.subSpecialization !== filters.subSpecialization) return false;
       if (filters.experience) {
         const [min] = filters.experience.split("-").map(Number);
         if (min && p.experience < min) return false;
@@ -52,7 +59,7 @@ function SearchResults() {
   };
 
   const clearFilters = () => {
-    setFilters({ city: "", service: "", budget: "", experience: "", verified: false, type: "" });
+    setFilters({ city: "", service: "", budget: "", experience: "", verified: false, type: "", subSpecialization: "" });
   };
 
   return (
@@ -103,6 +110,15 @@ function SearchResults() {
               </div>
 
               <div>
+                <label htmlFor="filter-subspec" className="block text-sm font-medium mb-1.5">Specialization</label>
+                <select id="filter-subspec" value={filters.subSpecialization} onChange={(e) => handleFilterChange("subSpecialization", e.target.value)}
+                  className="w-full px-3 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[44px]">
+                  <option value="">All Specializations</option>
+                  {subSpecs.map((s) => <option key={s} value={s}>{s}</option>)}
+                </select>
+              </div>
+
+              <div>
                 <label htmlFor="filter-budget" className="block text-sm font-medium mb-1.5">Budget</label>
                 <select id="filter-budget" value={filters.budget} onChange={(e) => handleFilterChange("budget", e.target.value)}
                   className="w-full px-3 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[44px]">
@@ -124,6 +140,7 @@ function SearchResults() {
                   <option value="10">10+ years</option>
                   <option value="15">15+ years</option>
                   <option value="20">20+ years</option>
+                  <option value="30">30+ years</option>
                 </select>
               </div>
 
@@ -177,7 +194,7 @@ function SearchResults() {
                 >
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-xl font-bold text-primary shrink-0">
-                      {pro.name.split(" ").map((n: string) => n[0]).join("")}
+                      {pro.name.split(" ").map((n: string) => n[0]).join("").slice(0, 2)}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
@@ -186,7 +203,8 @@ function SearchResults() {
                         </h3>
                         {pro.verified && <span className="verified-badge text-xs">✓ Verified</span>}
                       </div>
-                      <p className="text-sm text-text-secondary">{pro.specialty}</p>
+                      {pro.firmName && <p className="text-sm text-primary font-medium">{pro.firmName}</p>}
+                      <p className="text-sm text-text-secondary">{pro.subSpecialization || pro.specialty}</p>
                       <div className="flex items-center gap-1 mt-1">
                         <span className="stars text-sm">
                           {Array(Math.floor(pro.rating)).fill("★").join("")}
@@ -200,7 +218,7 @@ function SearchResults() {
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-text-secondary mb-4">
                     <span>📍 {pro.city}</span>
                     <span>🕐 {pro.experience} years</span>
-                    <span className="capitalize">🏠 {pro.type}</span>
+                    {pro.councilRegistration && <span className="font-mono text-xs">Reg: {pro.councilRegistration}</span>}
                   </div>
 
                   <p className="text-sm text-text-secondary mb-4 line-clamp-2">{pro.description}</p>

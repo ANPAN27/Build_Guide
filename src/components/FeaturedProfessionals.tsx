@@ -11,10 +11,13 @@ interface Professional {
   rating: number;
   reviewCount: number;
   verified: boolean;
+  firmName?: string;
+  subSpecialization?: string;
 }
 
 export default function FeaturedProfessionals() {
-  const featured: Professional[] = professionals.slice(0, 4);
+  const sorted = [...(professionals as Professional[])].sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
+  const featured: Professional[] = sorted.slice(0, 4);
 
   return (
     <section className="section">
@@ -33,13 +36,14 @@ export default function FeaturedProfessionals() {
               className="card group flex flex-col hover:border-primary/30"
             >
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary">
-                {pro.name.split(" ").map((n) => n[0]).join("")}
+                {pro.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
               </div>
               <div className="text-center mb-3">
                 <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
                   {pro.name}
                 </h3>
-                <p className="text-text-secondary text-sm">{pro.specialty}</p>
+                {pro.firmName && <p className="text-primary text-xs font-medium">{pro.firmName}</p>}
+                <p className="text-text-secondary text-sm">{pro.subSpecialization || pro.specialty}</p>
               </div>
               <div className="flex items-center justify-center gap-1 text-sm mb-2">
                 <span className="stars">{Array(Math.floor(pro.rating)).fill("★").join("")}</span>

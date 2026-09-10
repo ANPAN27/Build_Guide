@@ -10,8 +10,8 @@ export default function Hero() {
   const router = useRouter();
 
   const cities = [
-    "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata",
-    "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "Nagpur", "Lucknow", "Kochi",
+    "Nagpur", "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata",
+    "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "Lucknow", "Kochi",
   ];
 
   const handleSearch = (e: React.FormEvent) => {
