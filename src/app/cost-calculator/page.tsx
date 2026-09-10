@@ -12,6 +12,13 @@ const cityRates: Record<string, { basic: number; standard: number; premium: numb
   Ahmedabad: { basic: 1400, standard: 2000, premium: 2800 },
   Jaipur: { basic: 1300, standard: 1900, premium: 2700 },
   Nagpur: { basic: 1300, standard: 1800, premium: 2600 },
+  Lucknow: { basic: 1350, standard: 1850, premium: 2650 },
+  Kochi: { basic: 1550, standard: 2150, premium: 3050 },
+  Indore: { basic: 1250, standard: 1750, premium: 2550 },
+  Bhopal: { basic: 1200, standard: 1700, premium: 2500 },
+  Surat: { basic: 1350, standard: 1900, premium: 2700 },
+  Nashik: { basic: 1300, standard: 1800, premium: 2600 },
+  Visakhapatnam: { basic: 1400, standard: 1950, premium: 2750 },
 };
 
 const qualityLevels = [
@@ -46,6 +53,11 @@ export default function CostCalculator() {
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
             <h1 className="mb-3">Construction Cost Calculator</h1>
             <p className="text-text-secondary text-lg max-w-2xl mx-auto">
               Get an estimated cost for your home construction project
@@ -60,7 +72,7 @@ export default function CostCalculator() {
                 <div>
                   <label htmlFor="calc-city" className="block text-sm font-medium mb-1.5">City</label>
                   <select id="calc-city" value={city} onChange={(e) => setCity(e.target.value)}
-                    className="w-full px-4 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[52px]">
+                    className="w-full px-4 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[52px] focus:outline-none focus:ring-2 focus:ring-primary">
                     <option value="">Select your city</option>
                     {Object.keys(cityRates).map((c) => (
                       <option key={c} value={c}>{c}</option>
@@ -78,7 +90,7 @@ export default function CostCalculator() {
                 <div>
                   <label htmlFor="calc-floors" className="block text-sm font-medium mb-1.5">Number of Floors</label>
                   <select id="calc-floors" value={floors} onChange={(e) => setFloors(e.target.value)}
-                    className="w-full px-4 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[52px]">
+                    className="w-full px-4 py-3 border border-border rounded-xl text-text-primary bg-white min-h-[52px] focus:outline-none focus:ring-2 focus:ring-primary">
                     {[1, 2, 3, 4, 5].map((f) => (
                       <option key={f} value={f}>{f} Floor{f > 1 ? "s" : ""}</option>
                     ))}
@@ -148,7 +160,11 @@ export default function CostCalculator() {
                   </div>
                 ) : (
                   <div className="text-center py-8">
-                    <div className="text-4xl mb-3">📊</div>
+                    <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      </svg>
+                    </div>
                     <p className="text-blue-100">
                       Enter your project details to see the estimated cost
                     </p>
