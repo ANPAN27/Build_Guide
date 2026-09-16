@@ -4,6 +4,9 @@ import FeaturedProfessionals from "@/components/FeaturedProfessionals";
 import ConstructionTips from "@/components/ConstructionTips";
 import Link from "next/link";
 import services from "@/data/services.json";
+import architects from "@/data/architects.json";
+
+const architectCount = (architects as { name: string | null }[]).filter((a) => a.name).length;
 
 export default function Home() {
   return (
@@ -34,6 +37,38 @@ export default function Home() {
       <FeaturedProfessionals />
 
       <ConstructionTips />
+
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+              <svg className="w-10 h-10 md:w-12 md:h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div className="text-center md:text-left flex-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                Nagpur Architects Directory
+              </h2>
+              <h3 className="text-xl md:text-2xl font-bold text-text-primary mb-3">
+                {architectCount} registered architects on the Council of Architecture register
+              </h3>
+              <p className="text-text-secondary mb-6 max-w-lg">
+                Search the complete directory of registered architects with their
+                registration numbers, firms, and contact details.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <Link href="/architects" className="btn btn-primary">
+                  Browse Architects
+                </Link>
+                <Link href="/search?service=architects" className="btn btn-outline">
+                  Find Architects Nearby
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="section bg-primary text-white">
         <div className="container">

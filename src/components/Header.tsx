@@ -11,6 +11,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/search", label: "Find Professionals" },
+    { href: "/architects", label: "Architects" },
     { href: "/cost-calculator", label: "Cost Calculator" },
     { href: "/guide", label: "Home Owner Guide" },
     { href: "/about", label: "About" },
