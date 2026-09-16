@@ -11,12 +11,9 @@ interface Professional {
   rating: number;
   reviewCount: number;
   verified: boolean;
-<<<<<<< HEAD
   firmName?: string;
   subSpecialization?: string;
-=======
   workExperience?: { role: string; company: string; duration: string; projects: number }[];
->>>>>>> 1d2e764ed2ed65148fa6409b371bb7958a0377d3
 }
 
 export default function FeaturedProfessionals() {
@@ -39,15 +36,8 @@ export default function FeaturedProfessionals() {
               href={`/professional/${pro.id}`}
               className="card group flex flex-col hover:border-primary/30"
             >
-<<<<<<< HEAD
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary">
+<div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary">
                 {pro.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
-=======
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">
-                  {pro.name.split(" ").map((n) => n[0]).join("")}
-                </span>
->>>>>>> 1d2e764ed2ed65148fa6409b371bb7958a0377d3
               </div>
               <div className="text-center mb-3">
                 <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">

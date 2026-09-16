@@ -20,17 +20,9 @@ interface Professional {
   subSpecialization?: string;
 }
 
-<<<<<<< HEAD
 const cities = [...new Set((professionals as Professional[]).map((p) => p.city))].sort();
 
 const subSpecs = [...new Set((professionals as Professional[]).map((p) => p.subSpecialization).filter(Boolean))].sort() as string[];
-=======
-const cities = [
-  "Mumbai","Delhi","Bangalore","Chennai","Kolkata","Hyderabad","Pune",
-  "Ahmedabad","Jaipur","Nagpur","Lucknow","Kochi","Indore","Bhopal",
-  "Surat","Nashik","Visakhapatnam","Patna","Ranchi","Chandigarh",
-];
->>>>>>> 1d2e764ed2ed65148fa6409b371bb7958a0377d3
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -228,12 +220,7 @@ function SearchResults() {
                   </div>
 
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-text-secondary mb-4">
-<<<<<<< HEAD
-                    <span>📍 {pro.city}</span>
-                    <span>🕐 {pro.experience} years</span>
-                    {pro.councilRegistration && <span className="font-mono text-xs">Reg: {pro.councilRegistration}</span>}
-=======
-                    <span className="inline-flex items-center gap-1">
+<span className="inline-flex items-center gap-1">
                       <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                       {pro.city}
                     </span>
@@ -241,11 +228,11 @@ function SearchResults() {
                       <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                       {pro.experience} years
                     </span>
+                    {pro.councilRegistration && <span className="font-mono text-xs">Reg: {pro.councilRegistration}</span>}
                     <span className="capitalize inline-flex items-center gap-1">
                       <svg className="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                       {pro.type}
                     </span>
->>>>>>> 1d2e764ed2ed65148fa6409b371bb7958a0377d3
                   </div>
 
                   <p className="text-sm text-text-secondary mb-4 line-clamp-2">{pro.description}</p>

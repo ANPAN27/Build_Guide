@@ -10,15 +10,10 @@ export default function Hero() {
   const router = useRouter();
 
   const cities = [
-<<<<<<< HEAD
     "Nagpur", "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata",
     "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "Lucknow", "Kochi",
-=======
-    "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata",
-    "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "Nagpur", "Lucknow", "Kochi",
     "Indore", "Bhopal", "Surat", "Nashik", "Visakhapatnam", "Patna",
     "Ranchi", "Chandigarh", "Coimbatore", "Mysore", "Thiruvananthapuram",
->>>>>>> 1d2e764ed2ed65148fa6409b371bb7958a0377d3
   ];
 
   const filteredCities = cities.filter((c) =>
